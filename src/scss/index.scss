@@ -1,0 +1,102 @@
+$border-size: 5px;
+$list-bg-color: #f7f7f9;
+
+body {
+  //   display: flex;
+  //   min-height: 100vh;
+  //   flex-direction: column;
+  //   margin: 0;
+  background-image: url(/src/img/background_body.png);
+}
+
+.header {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  &__logo img {
+    height: 70px;
+  }
+  &__adress {
+    padding-right: 50px;
+    font-family: "Downcome", cursive;
+  }
+}
+
+.breadcrumb > li + li::before {
+  color: $list-bg-color;
+  content: ">";
+}
+
+.btn-warning-outline {
+  color: $warning;
+  background-image: none;
+  background-color: transparent;
+  border-color: $warning;
+}
+
+.label-danger {
+  background-color: #cf3721;
+}
+
+.label-success {
+  background-color: #258039;
+}
+
+.general_information {
+  border: solid $border-size $brand-color;
+}
+
+.title {
+  border: solid $border-size black;
+}
+
+.item {
+  border: solid $border-size black;
+}
+
+.header,
+.footer {
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+  min-height: 15vh;
+  background: url(/src/img/background.jpg);
+  padding: 15px;
+  color: rgb(7, 1, 26);
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.alert-danger {
+  background-color: rgba(207, 55, 33, 0.9);
+  border-color: rgba(185, 49, 29, 0.9);
+  color: #faebe9;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 1rem;
+  border: $border-size solid transparent;
+}
+
+.footer {
+  flex: 1;
+  padding: 14px;
+  flex-direction: row;
+  &__item-one {
+    font-family: "Cookie-Regular", cursive;
+    font-size: 25px;
+  }
+  &__item-two {
+    font-family: "CharakternyC", cursive;
+    font-weight: normal;
+    font-size: 20px;
+  }
+  &__item-tree {
+    font-family: "Downcome", cursive;
+    font-weight: normal;
+    font-size: 20px;
+  }
+}
