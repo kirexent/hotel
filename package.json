@@ -37,7 +37,7 @@
     "constantinople": "^4.0.1",
     "jquery": "^3.5.0",
     "jstransformer": "^1.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "popper.js": "^1.16.1"
   },
   "repository": {
